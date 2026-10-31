@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collaborative Drawing and Pen Tool App</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load p5.js and Socket.IO -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Draw Together, or Create your own Pen Tool</h1>
+  </header>
+
+  <div class="controls">
+    <label>Color:</label>
+    <div class="color-swatch-group">
+      <div class="color-btn selected" style="background: red;" onclick="selectColor('red', this)"></div>
+      <div class="color-btn" style="background: yellow;" onclick="selectColor('yellow', this)"></div>
+      <div class="color-btn" style="background: blue;" onclick="selectColor('blue', this)"></div>
+    </div>
+    <button onclick="saveIconAsPen()">Save Icon as Pen</button>
+    <button onclick="clearAll()">Clear Board</button>
+  </div>
+
+  <div class="workspace">
+    <div class="box">
+      <h3>1. Icon Canvas</h3>
+      <div id="iconCanvasContainer"></div>
+    </div>
+    <div class="box">
+      <h3>2. Shared Board</h3>
+      <div id="mainCanvasContainer"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

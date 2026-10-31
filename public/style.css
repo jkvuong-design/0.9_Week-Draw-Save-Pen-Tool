@@ -1,0 +1,68 @@
+/* Minimal Layout & Styling */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Toolbar & Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e2e2e2;
+}
+
+/* Color Swatches */
+.color-swatch-group {
+  display: flex;
+  gap: 6px;
+}
+
+.color-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.color-btn.selected {
+  border-color: #000;
+}
+
+/* Canvas Containers */
+.workspace {
+  display: flex;
+  gap: 20px;
+}
+
+#iconCanvasContainer,
+#mainCanvasContainer {
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  display: inline-block;
+}

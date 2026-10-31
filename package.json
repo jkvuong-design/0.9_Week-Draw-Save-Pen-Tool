@@ -1,0 +1,14 @@
+{
+  "name": "socket, p5, drawing and pen tool app",
+  "version": "1.0.0",
+  "description": "Collaborative drawing and pen tool appp",
+  "author": "janice vuong, undarmaa tserenkhuu",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
